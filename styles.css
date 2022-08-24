@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+header h1{
+    text-align: center;
+    padding: 25px;
+}
+
+main{
+    width: 100%;
+}
+
+.container{
+    width: 50%;
+    min-width: 700px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+.imc-calculator{
+    width: 90%;
+    padding: 50px 25px;
+    margin: auto;
+    text-align: center;
+    background: white;
+}
+
+.imc-calculator .sex{
+    display: inline-block;
+    padding: 25px 15px;
+}
+
+.sex img{
+	width: 100px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+.sex img:hover{
+    border: 3px solid #00be78;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.imc-calculator label{
+    display: inline-block;
+    font-size: 16px;
+    width: 75%;
+}
+
+.imc-calculator input{
+    -webkit-appearance: none;
+    display: inline-block;
+    width: 85%;
+    height: 15px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background: #cccccc;
+}
+
+.imc-calculator input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 10%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.imc-calculator input::-moz-range-thumb{
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 10%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.imc-calculator button{
+    display: inline-block;
+    font-size: 16px;
+    width: 50%;
+    height: 50px;
+    margin: 25px auto 0;
+    background: #04AA6D;
+    border-radius: 10px;
+    border: 1px solid #04AA6D;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.imc-calculator button:hover{
+    display: inline-block;
+    font-size: 16px;
+    width: 50%;
+    height: 50px;
+    margin: 25px auto 0;
+    background: #00be78;
+    border-radius: 10px;
+    border: 1px solid #00be78;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.result{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+#information-off{
+    width: 80%;
+    background: #ffffff;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #04AA6D;
+}
+
+#information-off h2{
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #04AA6D;
+    text-align: center;
+}
+
+#information-off p{
+    font-size: 16px;
+    color: #04AA6D;
+    text-align: center;
+}
+
+#information-on{
+    width: 80%;
+    background: #ffffff;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #04AA6D;
+}
+
+#information-on h2{
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #04AA6D;
+    text-align: center;
+}
+
+#information-on .result-imc{
+    font-size: 24px;
+    color: #04AA6D;
+    text-align: center;
+}
+
+#information-on .info-extra{
+    font-size: 16px;
+    width: 85%;
+    margin: 10px auto 0;
+    text-align: center;
+}
+
+#imc-bar{
+    -webkit-appearance: none;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background: rgb(0,255,255);
+    background: -moz-linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(0,255,0,1) 25%, rgba(255,255,0,1) 50%, rgba(255,101,0,1) 75%, rgba(255,0,0,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(0,255,0,1) 25%, rgba(255,255,0,1) 50%, rgba(255,101,0,1) 75%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(0,255,0,1) 25%, rgba(255,255,0,1) 50%, rgba(255,101,0,1) 75%, rgba(255,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffff",endColorstr="#ff0000",GradientType=1);
+}
+
+#imc-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #04AA6D;
+}
+
+#imc-bar::-moz-range-thumb{
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #04AA6D;
+}
+
+footer{
+    text-align: center;
+    color: #000000;
+    padding: 25px;
+}
+
+footer img{
+    width: 25px;
+    margin: 5px 2px;
+}
+
+@media screen and (max-width:1000px) {
+    main .container{
+        width: 100%;
+        min-width: auto;
+    }
+
+    .imc-calculator input{
+        width: 100%;
+    }
+
+    #calculate-imc{
+        width: 100%;
+    }
+
+    .result{
+        width: 100%;
+    }
+
+    #information-off{
+        width: 90%;
+    }
+
+    #information-on{
+        width: 90%;
+    }
+
+    #information-on h2{
+        font-size: 24px;
+    }
+
+    #information-on .result-imc{
+        font-size: 20px;
+    }
+
+    #information-on .info-extra{
+        width: 100%;
+    }
+}
